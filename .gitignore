@@ -1,5 +1,7 @@
 .idea/
 config/
+build/
+dist/
 !config/default.json
 node_modules/
 credentials.json

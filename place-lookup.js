@@ -110,4 +110,6 @@ function main(){
         }
     );
 }
-main();
+
+exports.lookupAllPlacesObserable = lookupAllPlacesObserable;
+exports.main = main;

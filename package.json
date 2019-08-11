@@ -2,9 +2,11 @@
   "name": "explore-places",
   "version": "1.0.0",
   "description": "",
-  "main": "place-lookup.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "zip": "copyfiles README.md dist && cd build/ && bestzip ../dist/lambda.zip *",
+    "build": "copyfiles -a node_modules/**/*.js config/*.json place-lookup.js lambda.js build"
   },
   "author": "",
   "license": "ISC",
@@ -13,7 +15,9 @@
     "googleapis": "^40.0.0"
   },
   "devDependencies": {
+    "bestzip": "^2.1.4",
     "config": "^3.2.2",
+    "copyfiles": "^2.1.1",
     "rxjs": "^6.5.2"
   }
 }
