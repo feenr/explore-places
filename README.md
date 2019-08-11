@@ -10,6 +10,7 @@ npm install
 // Save-as config/default.json to config/custom.json
 export NODE_ENV=custom
 node index.js
+// This will output place JSON to the console
 ```  
 
 ## Lambda Usage
