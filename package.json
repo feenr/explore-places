@@ -1,0 +1,19 @@
+{
+  "name": "explore-places",
+  "version": "1.0.0",
+  "description": "",
+  "main": "place-lookup.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/maps": "^0.5.5",
+    "googleapis": "^40.0.0"
+  },
+  "devDependencies": {
+    "config": "^3.2.2",
+    "rxjs": "^6.5.2"
+  }
+}

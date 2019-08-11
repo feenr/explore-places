@@ -1,0 +1,9 @@
+{
+  "googleApiKey": "<ADD YOUR API KEY HERE>",
+  "googleMapsQueryArgs": {
+    "query": "1600 Pennsylvania Ave, Washington DC",
+    "language": "en",
+    "type": "restaurant"
+  },
+  "timeout": 2000
+}
