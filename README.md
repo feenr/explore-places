@@ -13,12 +13,11 @@ node index.js
 ```  
 
 ## Lambda Usage
-This does not cover creation of a lambda function. Once a function has been created, follow this steps
+This does not cover creation of a lambda function. Once a function has been created, follow these steps
 
 ```
 npm install
-npm build
-npm zip
-// Upload the resulting zip file in the Lamba console
-
+npm run build
+npm run zip
+aws lambda update-function-code --function-name [lambda-name] --zip-file fileb://dist/lambda.zip
 ```
