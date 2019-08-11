@@ -18,7 +18,10 @@ This does not cover creation of a lambda function. Once a function has been crea
 
 ```
 npm install
-npm run build
+npm run zip-layer
+publish-layer-version --layer-name explore-places-dependencies --zip-file fileb://dist/lambda-layer.zip
 npm run zip
 aws lambda update-function-code --function-name [lambda-name] --zip-file fileb://dist/lambda.zip
+// Add explor-places-dendencies layer to Lambda runtime
+aws lambda invoke --function-name explore-stoneham-restaurants --payload '{"httpMethod":"GET"}'  test.txt
 ```

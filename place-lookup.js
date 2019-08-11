@@ -86,12 +86,10 @@ function lookupAllPlacesObserable(){
     });
 }
 
-function writeDataToFile(data){
-    let jsonData = JSON.stringify(data);
-    fs.writeFileSync('data.json', jsonData);
-}
-
-
+/**
+ * This function is really here for me to test the project manually. It just runs the query and outputs the data to
+ * the console.
+ */
 function main(){
     let observer = lookupAllPlacesObserable();
     let placeList = [];

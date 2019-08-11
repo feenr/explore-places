@@ -30,7 +30,16 @@ exports.handler = (event, context, callback) => {
             dynamo.scan({ TableName: 'explore-stoneham-restaurants' }, done);
             break;
         case 'POST':
-            placeLookup.lookupAllPlacesObserable();
+            let placeList = [];
+            placeLookup.lookupAllPlacesObserable().subscribe({
+                next(response){
+                    placeList = response;
+                },
+                complete(){
+                    done(placeList);
+                }
+            });
+            break;
         //break;
         case 'PUT':
 
