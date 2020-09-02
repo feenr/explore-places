@@ -18,7 +18,7 @@
     "googleapis": "^40.0.0"
   },
   "devDependencies": {
-    "bestzip": "^2.1.4",
+    "bestzip": "^2.1.7",
     "config": "^3.2.2",
     "copyfiles": "^2.1.1",
     "rxjs": "^6.5.2"
